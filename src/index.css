@@ -1,0 +1,52 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&family=Newsreader:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Public Sans', system-ui, sans-serif;
+    background: radial-gradient(1200px 600px at 20% -10%, #e7f0f3 0%, #f8fafc 50%, #f8fafc 100%);
+    color: #0f172a;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Newsreader', serif;
+  }
+
+  :focus-visible {
+    outline: 2px solid #1f8a70;
+    outline-offset: 2px;
+  }
+
+  .leaflet-container {
+    font-family: 'Public Sans', system-ui, sans-serif;
+  }
+
+  .leaflet-control-attribution {
+    font-size: 11px;
+  }
+
+  .leaflet-bar {
+    border: none;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.12);
+  }
+
+  .leaflet-bar a {
+    border-bottom: none;
+    color: #1f8a70;
+  }
+}
+
+@layer components {
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
